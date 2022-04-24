@@ -55,8 +55,10 @@ public class FileTest {
 
                     List<String[]> content = reader.readAll();
                     org.assertj.core.api.Assertions.assertThat(content).contains(
-                            new String[]{"John", "Doe", "120 jefferson st.", "Riverside", "NJ", "08075"},
-                            new String[]{"Stephen", "Tyler", "At the Plaza"}
+                            new String[]{"John", "Doe", "120 jefferson st.", "Riverside", " NJ", " 08075"},
+                            new String[]{"Jack", "McGinnis", "220 hobo Av.", "Phila", " PA", "09119"},
+                            new String[]{"John \"Da Man\"", "Repici", "120 Jefferson St.", "Riverside", " NJ", "08075"}
+
                         );
 
                 }
